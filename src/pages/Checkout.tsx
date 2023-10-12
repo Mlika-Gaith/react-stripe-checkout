@@ -21,7 +21,7 @@ const options = {
 
 const Checkout = (props: Props) => {
   return (
-    <div className="flex container mt-8">
+    <div className="flex container mt-8 flex-col max-w-4xl">
       <ProductCard {...PRODUCT} />
       <Elements stripe={stripePromise} options={options}>
         <CheckoutForm />

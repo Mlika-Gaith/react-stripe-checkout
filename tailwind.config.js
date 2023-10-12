@@ -10,6 +10,9 @@ export default {
       boxShadow: {
         custom: "0px 1px 1px rgba(0,0,0,0.3), 0px 3px 6px rgba(0,0,0,0.02)",
       },
+      fontSize: {
+        xs: ["0.85rem", "1.25"],
+      },
     },
     container: {
       center: true,

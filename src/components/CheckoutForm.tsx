@@ -68,7 +68,10 @@ const CheckoutForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="px-4">
+    <form
+      onSubmit={handleSubmit}
+      className="px-4 py-4 mt-5 border rounded mx-1"
+    >
       <div className="mb-3">
         <label htmlFor="email-input">Email</label>
         <div>
@@ -83,11 +86,17 @@ const CheckoutForm = () => {
         </div>
       </div>
       <PaymentElement />
-      <button type="submit" disabled={!stripe || !elements}>
-        Pay
-      </button>
-      {/* Show error message to your customers */}
-      {errorMessage && <div>{errorMessage}</div>}
+      <div className="flex">
+        <button
+          type="submit"
+          disabled={!stripe || !elements}
+          className="bg-indigo-400 text-white hover:bg-indigo-500 font-bold rounded shadow-[0.25rem_0.25rem_0px_0px_rgba(0,0,0,1)] focus:outline-none border-2 border-gray-900 hover:border-gray-900 mt-5 w-[20%] ml-auto"
+        >
+          Pay
+        </button>
+        {/* Show error message to your customers */}
+        {errorMessage && <div>{errorMessage}</div>}
+      </div>
     </form>
   );
 };
