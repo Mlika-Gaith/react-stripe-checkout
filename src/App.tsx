@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import Product from "./pages/Product";
+import Checkout from "./pages/Checkout";
 import productImage from "./assets/web-dev.png";
 import { Routes, Route, Outlet } from "react-router-dom";
 
@@ -29,7 +30,7 @@ function App() {
             />
           }
         />
-        <Route path="checkout" element={<div>Checkout</div>} />
+        <Route path="checkout" element={<Checkout />} />
         <Route path="success" element={<div>Success</div>} />
       </Route>
     </Routes>
