@@ -7,7 +7,7 @@ This is a simple product checkout demo that utilizes Stripe for payment processi
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/stripe-checkout-demo.git
+   git clone https://github.com/Mlika-Gaith/react-stripe-checkout.git
    cd stripe-checkout-demo
    ```
 
