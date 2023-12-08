@@ -1,27 +1,38 @@
-# React + TypeScript + Vite
+# Stripe Checkout Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple product checkout demo that utilizes Stripe for payment processing. The backend server is hosted on [aircode.io](https://aircode.io).
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repository:
 
-## Expanding the ESLint configuration
+   ```bash
+   git clone https://github.com/your-username/stripe-checkout-demo.git
+   cd stripe-checkout-demo
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. Install dependencies:
 
-- Configure the top-level `parserOptions` property like this:
+   ```bash
+   npm install
+   ```
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+3. Set up environment variables:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   Create a `.env` file in the root directory with the following content:
+
+   ```env
+   VITE_STRIPE_PK==your_stripe_secret_key
+
+   ```
+
+4. Run the application:
+
+   ```bash
+   npm run dev
+   ```
+
+## Notes
+
+- Ensure you are using your test Stripe API keys during development.
+- Do not use real card information in the demo.

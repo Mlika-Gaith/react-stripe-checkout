@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 
 type Image = {
@@ -19,7 +18,7 @@ const Product = (props: Props) => {
     navigate("/checkout");
   };
   return (
-    <div className="container p-0 mt-10 border-l border-b border-r rounded grid grid-cols-3">
+    <div className="container p-0 m-10 border-l border-b border-r rounded grid grid-cols-3">
       <div className="col-span-3 flex items-center justify-center">
         <img src={props.images[0].src} alt={props.images[0].alt} />
       </div>
